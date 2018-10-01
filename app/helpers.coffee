@@ -6,10 +6,10 @@ module.exports =
     (e) ->
       switch e.key
         when 'Enter'
-          onenter()
+          onenter?()
           e.redraw = true
         when 'Escape'
-          onescape()
+          onescape?()
           e.redraw = true
         else
           e.redraw = false
